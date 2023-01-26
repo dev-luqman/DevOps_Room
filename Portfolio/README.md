@@ -89,6 +89,10 @@ Please follow the below steps to deploy your static website to s3 bucket
   - If you get the below error please visit ```Step 5``` or ``` step 1 ```
 ![](./README_Docs/error_url_page.png)
 
+### :arrow_right: Next We Visit AWS IAM Policy 
 
 
 
+``` --- ``` ``` --- ``` ``` --- ```
+ ### :fireworks: Star and watch for more
+![](./README_Docs/rating.png)

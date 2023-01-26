@@ -9,7 +9,7 @@ This is basic of devOps using a personal portfolio to create a pipeline to deplo
 ### Steps 
 1. AWS 
   - S3 bucket set-up and deploy static files {HTML, CSS and all} with public access URl
-  - IAM policy (check here)[https://github.com/dev-luqman/DevOps_Room/blob/main/Portfolio/iam-policy.json]
+  - IAM policy [check here](https://github.com/dev-luqman/DevOps_Room/blob/main/Portfolio/iam-policy.json)
 
 2. CircleCI Basic Commands
 3. Basic Linus Command
@@ -19,4 +19,4 @@ This is basic of devOps using a personal portfolio to create a pipeline to deplo
 Please follow the below steps to deploy your static website to s3 bucket
 
 1. Login to [AWS](https://aws.amazon.com/) with your login details
-![](./README_Doc/login.png)
+![](./README_Docs/login.png)

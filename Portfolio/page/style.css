@@ -1,0 +1,14 @@
+.home_page{
+  height: 100px;
+  border-radius: 10px;
+  background: rgb(245, 245, 245);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  padding: 20px
+}
+
+.home_page .intro{
+  text-align: center;
+  width: 100%
+}

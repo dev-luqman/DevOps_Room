@@ -15,8 +15,13 @@ This is basic of devOps using a personal portfolio to create a pipeline to deplo
 3. Basic Linus Command
 4. Integrating and deploying from github to s3-bucket through circleci
 
-## AWS S3 bucket setup and static website deployment
+## :book: AWS S3 bucket setup and static website deployment
 Please follow the below steps to deploy your static website to s3 bucket
 
 1. Login to [AWS](https://aws.amazon.com/) with your login details
 ![](./README_Docs/login.png)
+
+``` --- ```
+
+2. Search for S3 bucket in the search box
+![](./README_Docs/search_s3_bucket.png)

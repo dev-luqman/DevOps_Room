@@ -10,6 +10,8 @@ This is basic of devOps using a personal portfolio to create a pipeline to deplo
 1. AWS 
   - S3 bucket set-up and deploy static files {HTML, CSS and all} with public access URl
   - IAM policy [check here](https://github.com/dev-luqman/DevOps_Room/blob/main/Portfolio/iam-policy.json)
+![](./README_Docs/S3_deployment.jpeg)
+  
 
 2. CircleCI Basic Commands
 3. Basic Linus Command

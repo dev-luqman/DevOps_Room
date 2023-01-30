@@ -99,7 +99,7 @@ Please follow the below steps to deploy your static website to s3 bucket
 ![](./README_Docs/error_url_page.png)
 
 ### :arrow_right: Next We Visit AWS IAM Policy 
-
+  - IAM policy with least access  - [here](https://github.com/dev-luqman/DevOps_Room/tree/main/aws_iam_policy)
 
 
 ``` --- ``` ``` --- ``` ``` --- ```

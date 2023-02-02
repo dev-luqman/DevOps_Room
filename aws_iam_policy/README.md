@@ -1,5 +1,5 @@
-## :rocket: Configuring AWS IAM Role to Access Amazon S3
-This section describes how to configure an S3 bucket, IAM role, and policies for CircleCi to access an external storage (S3_Bucket) in a secure manner on behalf of one or more individual users in your Circleci account.
+## :rocket: Configuring AWS IAM Role to Access Amazon S3 Bucket
+This section describes how to configure a S3 bucket, IAM role, and policies for CircleCi to access an external storage (S3_Bucket) in a secure manner on behalf of one or more individual users in your Circleci account.
 
 As a best practice, limit S3 bucket access to a specific IAM role with the minimum required permissions. The IAM role is created in your AWS account along with the permissions to access your S3 bucket and the trust policy to allow CircleCi to assume the IAM role.
 

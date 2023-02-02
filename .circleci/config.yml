@@ -22,6 +22,7 @@ jobs:
             ls -a
             cd Portfolio/page
             ls -a
+            aws s3 ls
             aws s3 cp style.css index.html s3://my-portfolio-123-lukhee --recursive
 workflows:
   welcome:

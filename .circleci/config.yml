@@ -19,11 +19,13 @@ jobs:
       - run:
           name: Deploy frontend objects
           command: |
+            # list all the file in the directory
             ls -a
+            # mode to the directory where your files are
             cd Portfolio/page
             ls -a
-            aws s3 ls
-            aws s3 cp style.css s3://my-portfolio-123-lukhee
+            # Please change my-portfolio-123-lukhee to your s3 bucket name
+            aws s3 cp style.css s3://my-portfolio-123-lukhee 
             aws s3 cp index.html s3://my-portfolio-123-lukhee
 workflows:
   welcome:

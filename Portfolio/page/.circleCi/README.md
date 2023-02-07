@@ -1,12 +1,14 @@
-## DEPLOYING FROM CIRCLECI PIPELINE TO S3 BUCKET
+## :rocket: DEPLOYING FROM CIRCLECI PIPELINE TO S3 BUCKET
 Here we will be updating our portfolio to github and connect circleci pipeling to deploy to S3 bucket 
 
 ### Prerequisite
 1. Updating S3 bucket to be hosting our website from  AWS CloudFront
---- It when ever we update our file to S3 bucket, we will alwasy need to expose the file to public view which will defeated our automation.
---- In order to avoid such, we will be using AWS CloudFront host to Edge Location 
+  - :note: When ever we update our file to S3 bucket, we will always need to expose the file to public view which will defeat our automation process.
+  - In order to avoid such, we will be using AWS CloudFront for hosting our s3_bucket to Edge Location 
 
 ### ⚙️ Steps 1 - Hosting to CloudFront (Edge Location)
+- Follow [YOUTUBE VIDEO](https://www.youtube.com/watch?v=-DDGYzKtNwc)
+``` OR ```
 - Visit AWS and search for CloudFront
 ![](./images/cloudFront_search.png)
 
@@ -48,47 +50,13 @@ Here we only want access to s3 bucket through cloundfront (CDN)
 ### :rocket: Connecting to Circleci
 We will now start connection to circleci throug GitHub to AWS S3(CloudFront/Edge location) access
 
-- create or copy ~ .circleCi/config.yml ~ folder/file in the root of your portfolio
+- Create 
+  - ``` .circleCi/config.yml ```
+  - folder/file in the root of your portfolio
 
 1. Copy the below command and pasted
-```
-
-version: 2.1
-
-jobs:
-
-  Update-S3-Bucket: # Naming of the job to perform
-    docker:
-      # Select Image to run 
-      - image: amazon/aws-cli # AWS docker image used to have access to aws commands pre-populated with it
-    steps:
-      - checkout # checking into the code - just same as we 
-
-      # Running Normal Command You do in your Ternmmila
-      - run: 
-          name: Install Packages (tar) # Naming the command to run 
-          command: | 
-            yum install -y tar gzip
-
-    # Deploy to S3_bucket in aws - Preview Exercise
-      - run:
-          name: Deploy frontend objects
-          command: |
-            # list all the file in the directory
-            ls -a
-            # mode to the directory where your files are
-            cd Portfolio/page
-            ls -a
-            # Please change my-portfolio-123-lukhee to your s3 bucket name
-            aws s3 cp style.css s3://my-portfolio-123-lukhee 
-            aws s3 cp index.html s3://my-portfolio-123-lukhee
-workflows:
-  welcome:
-    jobs:
-      - Update-S3-Bucket
-
-```
-
+[CircleCI_PipelineCode](https://github.com/dev-luqman/DevOps_Room/blob/main/.circleci/config.yml)
+![](./images/s3_bublic_access4.png)
 :book: Beware of indentation
 
 
@@ -148,9 +116,11 @@ workflows:
 
 
 9. Update your portfolio and push to github
-![](./images/circie_rerun.png)
+![](./images/updated_portfolio.png)
+![](./images/circleci_Updating.png)
 ```  ----  ```  ``` --- ``` ``` ---  ``` ``` --- ```
 ![](./images/rerun_pipeline.png)
+
 
 10. Check your CLoudfront Url to see the update
 ![](./images/cloudFront_url1.png)

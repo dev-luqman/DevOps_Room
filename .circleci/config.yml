@@ -30,7 +30,4 @@ jobs:
 workflows:
   welcome:
     jobs:
-      - Update-S3-Bucket:     
-          filters:
-            branches:
-              only: [main] # Only Upload when the branch is in mmain branch
+      - Update-S3-Bucket

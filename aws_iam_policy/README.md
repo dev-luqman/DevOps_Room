@@ -78,7 +78,7 @@ As a best practice, limit S3 bucket access to a specific IAM role with the minim
 ```
 
 
-### :arrow_right: CircleCI configuration 
+### :arrow_right: CircleCI configuration [here](https://github.com/dev-luqman/DevOps_Room/tree/main/Portfolio/page/.circleCi)
   <!-- - IAM policy with least access  - [here](https://github.com/dev-luqman/DevOps_Room/tree/main/aws_iam_policy) -->
 
 

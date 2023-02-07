@@ -34,8 +34,8 @@ Here we will be updating our portfolio to github and connect circleci pipeling t
 
 ### ⚙️ Steps 2 - Disable s3_bucket access 
 Here we only want access to s3 bucket through cloundfront (CDN)
-1. Visit your S3 bucket 
-2. Go to the permission tab and proceed
+### 1. Visit your S3 bucket 
+### 2. Go to the permission tab and proceed
 ![](./images/s3_bublic_access.png)
 ![](./images/s3_bublic_access2.png)
 ![](./images/s3_bublic_access4.png)
@@ -54,33 +54,33 @@ We will now start connection to circleci throug GitHub to AWS S3(CloudFront/Edge
   - ``` .circleCi/config.yml ```  folder/file in the root of your portfolio
 :note: In the root of your Project so that circleCi can see it when conecting
 
-1. Copy the below command and pasted
+### 1. Copy the below command and pasted
 [CircleCI_PipelineCode](https://github.com/dev-luqman/DevOps_Room/blob/main/.circleci/config.yml)
 ![](./images/circleCI_code3.png)
 :book: Beware of indentation
 
 
-2. Connect to circleCi
+### 2. Connect to circleCi
 ![](./images/circleci_home.png)
 
 ```  ----  ```  ``` --- ``` ``` ---  ``` ``` --- ```
 
-3. Connect to github project from circleCI
+### 3. Connect to github project from circleCI
 ![](./images/circleci_connect4.png)
 
 ```  ----  ```  ``` --- ``` ``` ---  ``` ``` --- ```
 
-4. Sellect the branch and connect 
+### 4. Sellect the branch and connect 
   - Mine is ``` Main ``` Brnach, Whats yours ?
 ![](./images/circleci_connect.png)
 
-5. :construction: At first your pipeline will fail 
+### 5. :construction: At first your pipeline will fail 
 ![](./images/circleci_failed2.png)
 
 :book: failed as a result of trying to connect aws s3 bucket and found no connection
 ![](./images/circleci_failed1.png)
 
-6. SetUp a AWS connection 
+### 6. SetUp a AWS connection 
 ![](./images/project_setting.png)
 
 ```  ----  ```  ``` --- ``` ``` ---  ``` ``` --- ```
@@ -92,7 +92,7 @@ We will now start connection to circleci throug GitHub to AWS S3(CloudFront/Edge
 :book: Add your circleci Ennvironment
 ![](./images/environment_add.png)
 
-7. getting your aws IAM credentials
+### 7. getting your aws IAM credentials
 ####visit AWS CONSOLE
 ![](./images/iam_credential2.png)
 
@@ -109,14 +109,14 @@ We will now start connection to circleci throug GitHub to AWS S3(CloudFront/Edge
 ```  ----  ```  ``` --- ``` ``` ---  ``` ``` --- ```
 ```  ----  ```  ``` --- ``` ``` ---  ``` ``` --- ```
 
-8. Let Get back to our pipeline and rerun 
+### 8. Let Get back to our pipeline and rerun 
 
 ![](./images/circie_rerun.png)
 ![](./images/circleci_success.png)
 ![](./images/circleci_success2.png)
 
 
-9. Update your portfolio and push to github
+### 9. Update your portfolio and push to github
 ![](./images/updated_portfolio.png)
 ![](./images/circleci_Updating.png)
 ```  ----  ```  ``` --- ``` ``` ---  ``` ``` --- ```
@@ -130,5 +130,5 @@ We will now start connection to circleci throug GitHub to AWS S3(CloudFront/Edge
 
 
 
- ## :happy: Than you for staying the end of the tutorial
- ### 
+ ## 🤩 Than you for staying till the end of the tutorial
+

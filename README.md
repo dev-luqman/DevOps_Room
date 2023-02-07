@@ -15,5 +15,3 @@ This will be a class for becoming a devops by doing the simplest thing closet to
 
 ### :link: Follow On Social Media For more Update:
 [LinkedIn](https://www.linkedin.com/in/lukhee)
-
-### :hugs: Thank You and see you soon for more

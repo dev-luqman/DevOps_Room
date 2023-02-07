@@ -51,12 +51,12 @@ Here we only want access to s3 bucket through cloundfront (CDN)
 We will now start connection to circleci throug GitHub to AWS S3(CloudFront/Edge location) access
 
 - Create 
-  - ``` .circleCi/config.yml ```
-  - folder/file in the root of your portfolio
+  - ``` .circleCi/config.yml ```  folder/file in the root of your portfolio
+:note: In the root of your Project so that circleCi can see it when conecting
 
 1. Copy the below command and pasted
 [CircleCI_PipelineCode](https://github.com/dev-luqman/DevOps_Room/blob/main/.circleci/config.yml)
-![](./images/s3_bublic_access4.png)
+![](./images/circleCI_code3.png)
 :book: Beware of indentation
 
 
@@ -65,15 +65,16 @@ We will now start connection to circleci throug GitHub to AWS S3(CloudFront/Edge
 
 ```  ----  ```  ``` --- ``` ``` ---  ``` ``` --- ```
 
-3. Connect to github project
+3. Connect to github project from circleCI
 ![](./images/circleci_connect4.png)
 
 ```  ----  ```  ``` --- ``` ``` ---  ``` ``` --- ```
 
-4. Sellect the branch and connect
+4. Sellect the branch and connect 
+  - Mine is ``` Main ``` Brnach, Whats yours ?
 ![](./images/circleci_connect.png)
 
-5. At first your pipeline will fail 
+5. :construction: At first your pipeline will fail 
 ![](./images/circleci_failed2.png)
 
 :book: failed as a result of trying to connect aws s3 bucket and found no connection
@@ -122,7 +123,12 @@ We will now start connection to circleci throug GitHub to AWS S3(CloudFront/Edge
 ![](./images/rerun_pipeline.png)
 
 
-10. Check your CLoudfront Url to see the update
+10. :dart: Check your CLoudfront Url to see the update
 ![](./images/cloudFront_url1.png)
 ```  ----  ```  ``` --- ``` ``` ---  ``` ``` --- ```
 ![](./images/CloudFront2.png)
+
+
+
+ ## :happy: Than you for staying the end of the tutorial
+ ### 

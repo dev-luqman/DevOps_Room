@@ -9,3 +9,11 @@ This will be a class for becoming a devops by doing the simplest thing closet to
     - IAM policy with least access  - [here](https://github.com/dev-luqman/DevOps_Room/tree/main/aws_iam_policy)
 
   - CircleCi - Automation pipeline  ![](https://img.shields.io/badge/CircleCI-passed-success)
+  ![](./Portfolio/README_Docs/Porfolio-pipeline.png)
+  
+
+
+### :link: Follow On Social Media For more Update:
+[LinkedIn](https://www.linkedin.com/in/lukhee)
+
+### :hugs: Thank You and see you soon for more

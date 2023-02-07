@@ -6,7 +6,7 @@ Here we will be updating our portfolio to github and connect circleci pipeling t
 --- It when ever we update our file to S3 bucket, we will alwasy need to expose the file to public view which will defeated our automation.
 --- In order to avoid such, we will be using AWS CloudFront host to Edge Location 
 
-### ⚙️ Steps - Hosting to CloudFront (Edge Location)
+### ⚙️ Steps 1 - Hosting to CloudFront (Edge Location)
 - Visit AWS and search for CloudFront
 ![](./images/cloudFront_search.png)
 
@@ -28,6 +28,16 @@ Here we will be updating our portfolio to github and connect circleci pipeling t
 ```  ----  ```  ``` --- ``` ``` ---  ``` ``` --- ```
 
 ![](./images/cloudFront_url.png)
+
+
+### ⚙️ Steps 2 - Disable s3_bucket access 
+Here we only want access to s3 bucket through cloundfront (CDN)
+1. Visit your S3 bucket 
+2. Go to the permission tab and proceed
+![](./images/s3_bublic_access.png)
+![](./images/s3_bublic_access2.png)
+![](./images/s3_bublic_access4.png)
+
 
 
 ```  ----  ```  ``` --- ``` ``` ---  ``` ``` --- ```
@@ -139,6 +149,10 @@ workflows:
 
 9. Update your portfolio and push to github
 ![](./images/circie_rerun.png)
+```  ----  ```  ``` --- ``` ``` ---  ``` ``` --- ```
+![](./images/rerun_pipeline.png)
 
 10. Check your CLoudfront Url to see the update
 ![](./images/cloudFront_url1.png)
+```  ----  ```  ``` --- ``` ``` ---  ``` ``` --- ```
+![](./images/CloudFront2.png)
